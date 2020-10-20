@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up - Easy signup form!</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>            
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container p-3">
+        <h2>Sign Up Form</h2>
+        <form>
+            <div class="form-group row mt-3">
+                <label class="control-label col-form-label col-md-1">Fullname:</label>
+                <input class="form-control col-md-4" type="text" placeholder="Name" id="name">
+                <small id="nameError" class="text-danger col-form-label col-md-* ml-3"></small>
+            </div>
+            <div class="form-group row">
+                <label class="control-label col-form-label col-md-1">Email:</label>
+                <input class="form-control col-md-4" type="email" placeholder="Email" id="eMail">
+                <small id="emailError" class="text-danger col-form-label col-md-* ml-3"></small>
+            </div>
+            <div class="form-group row">
+                <label class="col-form-label col-md-1">Mobile:</label>
+                <input class="form-control col-md-4" type="text" placeholder="Mobile Number" id="phoneNumber">
+                <small id="mobileError" class="text-danger col-form-label col-md-* ml-3"></small>
+            </div>
+            <button class="btn btn-outline-dark col-md-5" type="button" id="signUp">Signup</button>
+        </form>
+
+        <div class="border-top my-4"></div>
+
+        <h3>Users In Database</h3>
+        <table class="table mt-4">
+            <tr>
+                <th>FullName</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Action</th>
+            </tr>
+        </table>
+
+        <div class="border-top my-5"></div>
+        <div id="viewModel"></div>
+
+    </div>
+
+    
+    
+</body>
+
+</html>
